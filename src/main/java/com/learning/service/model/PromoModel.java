@@ -2,9 +2,11 @@ package com.learning.service.model;
 
 import org.joda.time.DateTime;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class PromoModel {
+public class PromoModel implements Serializable {
+    private static final long serialVersionUID = 1829635018764302230L;
     private Integer id;
 
     //秒杀活动状态 1表示还未开始，2表示进行中，3表示已结束
